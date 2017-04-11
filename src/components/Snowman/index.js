@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 import _ from 'lodash'
-import spine from './spine'
+// import spine from './spine'
 
 const snowman = {
-  atlas: require('file!./Spine.atlas'),
-  json: require('!file!./Spine.json'),
+  // atlas: require('file!./Spine.atlas'),
+  // json: require('!file!./Spine.json'),
   png: require('./Spine.png')
 }
 
