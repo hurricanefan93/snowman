@@ -38,7 +38,7 @@ class App extends Component {
   }
 
   render () {
-    const letters = ALPHABET.map((letter, i) => {
+    const letter = ALPHABET.map((letter, i) => {
       return <LetterButton
         value={letter}
         onChoose={() => this.choose(letter)}
@@ -51,7 +51,7 @@ class App extends Component {
         <Snowman step={this.points} size={400} />
         <Word value={this.state.word} guesses={this.state.guesses} />
         <div className='keyboard'>
-          {letters}
+          {letter}
         </div>
         <Button reset={this.reset} />
       </main>
