@@ -49,7 +49,7 @@ class App extends Component {
     })
     return <div className='app'>
       <main>
-        <div>{this.points}</div>
+        <div className='counter'>{this.points}</div>
         <Word value={this.state.word} guesses={this.state.guesses} />
         <div className='keyboard'>
           {letter}
