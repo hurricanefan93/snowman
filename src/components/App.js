@@ -25,9 +25,10 @@ class App extends Component {
   }
 
   choose (letter) {
-    console.log('you clicked', letter)
+    // console.log('you clicked', letter)
     this.setState({
-      guesses: [...this.state.guesses, letter]
+      guesses: [...this.state.guesses, letter],
+
     })
   }
 
@@ -48,7 +49,7 @@ class App extends Component {
     })
     return <div className='app'>
       <main>
-        <Snowman step={this.points} size={400} />
+        <div>{this.points}</div>
         <Word value={this.state.word} guesses={this.state.guesses} />
         <div className='keyboard'>
           {letter}
