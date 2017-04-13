@@ -72,8 +72,33 @@ footer {
   background-color: hsl(220, 75%, 80%);
   border: 2px solid hsl(220, 75%, 50%);
   margin: 0.2em;
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+
+.letter-button:hover {
+  opacity: 0.33;
 }
 
 .letter-button:disabled {
   opacity: 0.33;
+}
+
+.victory {
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: white;
+  border: 2px solid hsl(220, 75%, 50%);
+  width: 60px;
+  height: 35px;
+}
+
+.victory:hover {
+  color: white;
+  background-color: hsl(220, 75%, 80%);
+  border-radius: 8px;
+  box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.2);
+  font-size: 20px;
+  width: 80px;
+  height: 45px;
 }
